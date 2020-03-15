@@ -7,6 +7,11 @@ function greaterOfTwoNumbers(num1, num2) {
   else
     return num1
 }
+
+
+function maxOfTwoNumbers() {
+
+}
 // Progression #2: The lengthy word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
@@ -35,6 +40,7 @@ function netPrice(numbers) {
 }
 
 
+
 function add(list) {
   var res = 0
   for (var start = 0; start < list.length; start++) {
@@ -45,7 +51,8 @@ function add(list) {
     else if (typeof (list[start]) == 'boolean')
       res += list[start]
     else
-      res += 0
+      throw Error("Unsupported data type sir or ma\'am");
+
   }
   return res
 }

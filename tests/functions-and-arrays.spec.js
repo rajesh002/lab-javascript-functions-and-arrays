@@ -178,7 +178,7 @@ describe('Calculate the average of an array of strings', () => {
         'sugar',
         'salt'
       ])
-    ).toBe(7);
+    ).toBe(4.9);
   });
 });
 
@@ -266,7 +266,7 @@ describe('Find elements', () => {
   // });
 
   it('should return true if the word we are looking for is in the array', () => {
-    expect(searchElement(['door','window','ceiling','roof','plinth','tiles', 'ceiling','flooring'], 'tiles')).toBe(
+    expect(searchElement(['door', 'window', 'ceiling', 'roof', 'plinth', 'tiles', 'ceiling', 'flooring'], 'tiles')).toBe(
       true
     );
   });
@@ -365,6 +365,6 @@ describe('Bonus Quest - greatestProduct', () => {
       [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
       [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
     ];
-    expect(maximumProduct(matrix)).toBe(16);
+    expect(maximumProduct(matrix)).toBe(1048576);
   });
 });
